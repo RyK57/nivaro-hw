@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Simple Website</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #myButton {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>>
+    <header>
+        <h1>Welcome to My Simple Website</h1>
+    </header>
+
+    <main>
+        <p>This is a basic website with some content.</p>
+        <button id="myButton">Click Me!</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Simple Website</p>
+    </footer>
+
+    <script>
+        // JavaScript Interactive Element
+        document.getElementById('myButton').addEventListener('click', function () {
+            alert('You clicked the button!')
+        })
+    </script>
 </body>
 </html>
